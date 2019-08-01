@@ -1,0 +1,8 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Exegetic Training"
+
+
+[params]
+        navImage = "img/exegetic-banner-white.svg" 
+        headerImage = "img/training.png"

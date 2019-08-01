@@ -1,0 +1,74 @@
+{{ define "main" }}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <h1 style="text-align: center;">Upcoming Courses</h1>
+           
+            {{ if where .Pages ".Params.province" "Cape Town" }}
+            <div>
+                <hr>
+                <h2>Cape Town </h2>
+                <ul>
+                {{ range where .Pages ".Params.province" "Cape Town" }}
+                <li>
+                    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+                    <p> {{ .Params.description }} </p>
+                    <p>{{ .Params.course_date }}, {{.Params.venue}}, {{.Params.province}}</p>
+                </li>
+                {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+            
+            {{ if where .Pages ".Params.province" "Durban" }}
+            <div>
+                <hr>
+                <h2>Durban</h2>
+                <ul>
+                    {{ range where .Pages ".Params.province" "Durban" }}
+                    <li>
+                        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+                        <p> {{ .Params.description }} </p>
+                        <p>{{ .Params.course_date }}, {{.Params.venue}}, {{.Params.province}}</p>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{end}}
+            
+            {{ if where .Pages ".Params.province" "Johannesburg" }}
+            <div>
+                <hr>
+                <h2>Johannesburg</h2>
+                <ul>
+                    {{ range where .Pages ".Params.province" "Johannesburg" }}
+                    <li>
+                        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+                        <p> {{ .Params.description }} </p>
+                        <p>{{ .Params.course_date }}, {{.Params.venue}}, {{.Params.province}}</p>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{end}}
+
+            <!-- Need to check if current date is after course_date -->
+            <!-- <div>
+                <h2>Previous Courses</h2>
+                <ul>
+                    {{ range where .Pages ".Params.province" "Johannesburg" }}
+                    <li>
+                        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+                        <p> {{ .Params.description }} </p>
+                        <p>{{ .Params.course_date }}</p>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div> -->
+            
+        </div>
+    </div>
+</div>
+          
+{{ end }}
