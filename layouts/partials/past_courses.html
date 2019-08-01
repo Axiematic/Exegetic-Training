@@ -1,8 +1,6 @@
 {{ range where .Pages ".Params.type" "course" }}
 {{ if .Params.course_finished}}
 <div class="event">
-    <h1 style="text-align: center; padding-bottom: 3%; padding-top: 10%;">Previous Courses</h1>
-    <hr>
     <ul>
         <li>
             <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
