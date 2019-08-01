@@ -3,6 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 course_date:
+course_finished: false
 province:
 venue: 
 description: 
