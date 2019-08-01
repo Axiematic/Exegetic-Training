@@ -1,0 +1,22 @@
+{{ if where .Pages ".Params.province" "Cape Town" }}
+
+<div class="provience-events" style="padding-top: 3%;">
+    <hr>
+    <h2 style="margin-bottom: 4%;">Cape Town</h2>
+    <ul>
+        {{ range where .Pages ".Params.province" "Cape Town" }}
+        <!--Checks params to see if course finished-->
+        {{ if .Params.course_finished}}
+        {{else}}
+        <li>
+            <div class="single-event">
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p style="margin: 15px 0!important;"> {{ .Params.description }} </p>
+                <p>{{ .Params.course_date }}, {{.Params.venue}}, {{.Params.province}}</p>
+            </div>
+        </li>
+        {{end}}
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
