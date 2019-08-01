@@ -6,7 +6,7 @@
             <h1 style="text-align: center;">Upcoming Courses</h1>
            
             {{ if where .Pages ".Params.province" "Cape Town" }}
-            <div>
+            <div class="event">
                 <hr>
                 <h2>Cape Town </h2>
                 <ul>
@@ -22,7 +22,7 @@
             {{ end }}
             
             {{ if where .Pages ".Params.province" "Durban" }}
-            <div>
+            <div class="event">
                 <hr>
                 <h2>Durban</h2>
                 <ul>
@@ -38,7 +38,7 @@
             {{end}}
             
             {{ if where .Pages ".Params.province" "Johannesburg" }}
-            <div>
+            <div class="event">
                 <hr>
                 <h2>Johannesburg</h2>
                 <ul>
