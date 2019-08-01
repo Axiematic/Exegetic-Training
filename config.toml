@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Exegetic Training"
-
+buildFuture = true
 
 [params]
         navImage = "img/exegetic-banner-white.svg" 
