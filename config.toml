@@ -7,3 +7,4 @@ buildFuture = true
 [params]
         navImage = "img/exegetic-banner-white.svg" 
         headerImage = "img/training.png"
+        
