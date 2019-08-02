@@ -1,8 +1,11 @@
-{{ range where .Pages ".Params.type" "course" }}
-{{ if .Params.course_finished}}
+<!-- create current date as a variable -->
+{{$d := ( now.Format "2006-01-02")}}
+{{ range (where .Pages ".Params.type" "course").Reverse }}
+
+<!--Checks params to see if the expiry date is less(before) than the current date -->
+{{ if lt .Params.expiry_date $d }}
+
 <div class="event">
-    <h1 style="text-align: center; padding-bottom: 3%; padding-top: 10%;">Previous Courses</h1>
-    <hr>
     <ul>
         <li>
             <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
