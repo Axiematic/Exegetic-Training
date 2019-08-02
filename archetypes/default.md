@@ -3,7 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 course_date:
-course_finished: false
+expiry_date: #need to set date in this formate year-month-day
 province:
 venue: 
 description: 
