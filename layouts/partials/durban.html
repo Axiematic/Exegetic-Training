@@ -1,23 +1,20 @@
 <!-- create current date as a variable $d -->
-{{$d := ( now.Format "2006-01-02")}}
+{{ $d := ( now.Format "2006-01-02") }}
 
-<!-- Checks if there is pages with province:durban. this allows us to hide the Durban title if there is none-->
-{{ if where .Pages ".Params.province" "Durban" }}
-<div class="provience-events" style="padding-top: 2.5%;">
+<div id="hide" class="provience-events" style="padding-top: 2.5%;">
     <hr>
     <h2 style="margin-bottom: 4%;">Durban</h2>
-    <ul>
     <!--Creates a loop for pages with the param province: Durban and reverses order-->
     {{ range (where .Pages ".Params.province" "Durban").Reverse }}
     <!--Checks params to see if current date is greater(after expiry date) than expiry_date-->
-    {{ if lt $d .Params.expiry_date  }}
+    {{ if le $d .Params.expiry_date  }}
+    <ul>
         <li>
             <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
             <p style="margin: 15px 0!important;"> {{ .Params.description }} </p>
             <p>{{ .Params.course_date }}, {{.Params.venue}}, {{.Params.province}}</p>
         </li>
-        {{ end }}
-        {{ end }}
     </ul>
+    {{ end }}
+    {{ end }}
 </div>
-{{end}}

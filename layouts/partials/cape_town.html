@@ -1,22 +1,19 @@
 <!-- create current date as a variable -->
-{{$d := ( now.Format "2006-01-02")}}
-{{ if where .Pages ".Params.province" "Cape Town" }}
-<div class="provience-events" style="padding-top: 3%;">
+{{ $d := ( now.Format "2006-01-02") }}
+
+<div id="hide" class="provience-events" style="padding-top: 3%;">
     <hr>
     <h2 style="margin-bottom: 4%;">Cape Town</h2>
+    {{ range (where .Pages ".Params.province" "Cape Town").Reverse }}
+    <!--Checks params to see if current date is greater(after expiry date) than expiry_date-->
+    {{ if le $d .Params.expiry_date  }}
     <ul>
-        {{ range (where .Pages ".Params.province" "Cape Town").Reverse }}
-        <!--Checks params to see if current date is greater(after expiry date) than expiry_date-->
-        {{ if lt $d .Params.expiry_date  }}
-            <li>
-                <!-- <div class="single-event"> -->
-                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                <p style="margin: 15px 0!important;"> {{ .Params.description }} </p>
-                <p>{{ .Params.course_date }}, {{.Params.venue}}, {{.Params.province}}</p>
-                <!-- </div> -->
-            </li>
-        {{end}}
-        {{ end }}
+        <li>
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <p style="margin: 15px 0!important;"> {{ .Params.description }} </p>
+            <p>{{ .Params.course_date }}, {{.Params.venue}}, {{.Params.province}}</p>
+        </li>
     </ul>
+    {{ end }}
+    {{ end }}
 </div>
-{{ end }}
