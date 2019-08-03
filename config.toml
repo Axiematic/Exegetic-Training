@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Exegetic Training"
 buildFuture = true
+staticDir = ["static"]
 
 
 [params]
