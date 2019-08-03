@@ -7,5 +7,5 @@ staticDir = ["static"]
 
 [params]
         navImage = "img/exegetic-banner-white.svg" 
-        headerImage = "img/training.png"
+        headerImage = "img/training.jpg"
         
