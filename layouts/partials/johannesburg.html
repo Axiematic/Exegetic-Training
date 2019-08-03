@@ -1,19 +1,20 @@
-{{ if where .Pages ".Params.province" "Johannesburg" }}
-<div class="provience-events">
+<!-- create current date as a variable -->
+{{ $d := ( now.Format "2006-01-02") }}
+
+<div id="hide" class="provience-events" style="padding-top: 2.5%;">
     <hr>
     <h2 style="margin-bottom: 4%;">Johannesburg</h2>
+    {{ range where .Pages ".Params.province" "Johannesburg" }}
+    <!--Checks params to see if current date is greater(after expiry date) than expiry_date-->
+    {{ if le $d .Params.expiry_date  }}
     <ul>
-        {{ range where .Pages ".Params.province" "Johannesburg" }}
-        <!--Checks params to see if course finished-->
-        {{ if .Params.course_finished}}
-        {{else}}
         <li>
             <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
             <p style="margin: 15px 0!important;"> {{ .Params.description }} </p>
             <p>{{ .Params.course_date }}, {{.Params.venue}}, {{.Params.province}}</p>
         </li>
-        {{ end }}
-        {{ end }}
+        
     </ul>
+    {{ end }}
+    {{ end }}
 </div>
-{{end}}

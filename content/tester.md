@@ -1,12 +1,12 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "Joburg test course"
+date: 2019-08-03T11:06:34+02:00
 draft: true
-course_date:
-expiry_date: #need to set date in this formate year-month-day
-province:
-venue: 
-description: 
+course_date: 2019-08-03
+expiry_date: 2019-08-03 #need to set date in this formate year-month-day
+province: "Johannesburg"
+venue: "The test venue"
+description: "This is a test description"
 type: "course"
 ---
 
