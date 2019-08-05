@@ -4,7 +4,8 @@
 <div id="hide" class="provience-events" style="padding-top: 2.5%;">
     <hr>
     <h2 style="margin-bottom: 4%;">Johannesburg</h2>
-    {{ range where .Pages ".Params.province" "Johannesburg" }}
+    <!--Creates a loop for pages with the param province: Johannesburg and reverses order-->
+    {{ range (where .Pages ".Params.province" "Johannesburg").Reverse }}
     <!--Checks params to see if current date is greater(after expiry date) than expiry_date-->
     {{ if le $d .Params.expiry_date  }}
     <ul>
@@ -13,7 +14,6 @@
             <p style="margin: 15px 0!important;"> {{ .Params.description }} </p>
             <p>{{ .Params.course_date }}, {{.Params.venue}}, {{.Params.province}}</p>
         </li>
-        
     </ul>
     {{ end }}
     {{ end }}

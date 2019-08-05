@@ -2,9 +2,9 @@
 {{ $d := ( now.Format "2006-01-02") }}
 
 <div id="hide" class="provience-events" style="padding-top: 3%;">
-
     <hr>
     <h2 style="margin-bottom: 4%;">Cape Town</h2>
+    <!--Creates a loop for pages with the param province: Cape Town and reverses order-->
     {{ range (where .Pages ".Params.province" "Cape Town").Reverse }}
     <!--Checks params to see if current date is greater(after expiry date) than expiry_date-->
     {{ if le $d .Params.expiry_date  }}
