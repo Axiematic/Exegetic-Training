@@ -23,14 +23,8 @@ h6 {
 }
 
 a {
-  color: #212529;
+  color: #007bff;
   -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  text-decoration: underline;
-}
-
-a:focus, a:hover {
-  color: #3498db;
 }
 
 blockquote {
