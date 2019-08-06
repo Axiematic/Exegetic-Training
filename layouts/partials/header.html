@@ -6,7 +6,7 @@
                 <div class="site-heading">
                     <h1>{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</h1>
                     {{ if eq .Type "course" }}
-                    <p>{{.Params.course_date}}</p>
+                    <p>{{.Params.course_date}}, {{.Params.full_venue}}</p>
                     {{ else }}
                     <p></p>
                     {{ end }}
