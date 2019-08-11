@@ -6,6 +6,7 @@ course_date:
 expiry_date: #need to set date in this formate year-month-day
 province:
 venue: 
+full_venue:
 description: 
 type: "course"
 ---
