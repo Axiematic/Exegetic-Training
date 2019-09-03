@@ -11,7 +11,7 @@ description: The new release of SQL Server; SQL Server 2019 includes Apache Spar
 type: "course"
 ---
 
-This workshop will be presented in collaboration with [Niels Berglund](https://nielsberglund.com/).
+This workshop is a pre-con for the [Johannesburg SQL Saturday](https://www.sqlsaturday.com/903/EventHome.aspx) event, presented in collaboration with [Niels Berglund](https://nielsberglund.com/).
 
 The new release of SQL Server; SQL Server 2019 includes Apache Spark and Hadoop Distributed File System (HDFS) for scalable compute and storage. This new architecture that combines together the SQL Server database engine, Spark, and HDFS into a unified data platform is called a “big data cluster.”
 
