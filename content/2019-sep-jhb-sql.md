@@ -3,7 +3,7 @@ title: "SQL Server 2019 Big Data Cluster"
 date: 2019-09-12T00:14:43+02:00
 draft: false
 course_date: "6 September 2019"
-expiry_date: 2019-09-6 #need to set date in this formate year-month-day
+expiry_date: 2019-09-06 #need to set date in this formate year-month-day
 province: "Johannesburg"
 venue: "Microsoft SA Bryanston office"
 full_venue: "Microsoft SA Bryanston office, 3012 William Nicol Drive, Sandton"
