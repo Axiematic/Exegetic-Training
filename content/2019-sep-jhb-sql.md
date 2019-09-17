@@ -7,7 +7,7 @@ expiry_date: 2019-09-06 #need to set date in this formate year-month-day
 province: "Johannesburg"
 venue: "Microsoft SA Bryanston office"
 full_venue: "Microsoft SA Bryanston office, 3012 William Nicol Drive, Sandton"
-description: The new release of SQL Server; SQL Server 2019 includes Apache Spark and Hadoop Distributed File System (HDFS) for scalable compute and storage. This new architecture that combines together the SQL Server database engine, Spark, and HDFS into a unified data platform is called a “big data cluster.”
+description:
 type: "course"
 ---
 
