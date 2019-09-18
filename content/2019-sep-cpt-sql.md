@@ -2,16 +2,16 @@
 title: "SQL Server 2019 Big Data Cluster"
 date: 2019-09-12T00:14:43+02:00
 draft: false
-course_date: "6 September 2019"
-expiry_date: 2019-09-06 #need to set date in this formate year-month-day
-province: "Johannesburg"
-venue: "Microsoft SA Bryanston office"
-full_venue: "Microsoft SA Bryanston office, 3012 William Nicol Drive, Sandton"
-description:
+course_date: "13 September 2019"
+expiry_date: 2019-09-13 #need to set date in this formate year-month-day
+province: "Cape Town"
+venue: "The River Club"
+full_venue: "The River Club, Observatory, Cape Town"
+description: The new release of SQL Server; SQL Server 2019 includes Apache Spark and Hadoop Distributed File System (HDFS) for scalable compute and storage. This new architecture that combines together the SQL Server database engine, Spark, and HDFS into a unified data platform is called a “big data cluster.”
 type: "course"
 ---
 
-This workshop is a pre-con for the [Johannesburg SQL Saturday](https://www.sqlsaturday.com/903/EventHome.aspx) event, presented in collaboration with [Niels Berglund](https://nielsberglund.com/).
+This workshop is a pre-con for the [Cape Town SQL Saturday](https://www.sqlsaturday.com/897/EventHome.aspx) event, presented in collaboration with [Niels Berglund](https://nielsberglund.com/).
 
 The new release of SQL Server; SQL Server 2019 includes Apache Spark and Hadoop Distributed File System (HDFS) for scalable compute and storage. This new architecture that combines together the SQL Server database engine, Spark, and HDFS into a unified data platform is called a “big data cluster.”
 
@@ -23,4 +23,4 @@ In this one day workshop you will learn the architecture of the Big Data Cluster
           
 Install [Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio/download?view=sql-server-2017) together with the "[SQL Server 2019 (preview)](https://www.microsoft.com/en-us/sql-server/sql-server-2019#Install)" extension for Azure Data Studio.
 
-<a class="btn btn-primary register" href="https://www.quicket.co.za/events/81482-a-day-of-sql-server-2019-big-data-cluster-with-neils-berglund-and-andrew-collier#/" target="_blank" style="text-decoration: none;"> <strong>Purchase a ticket</strong></a>
+<a class="btn btn-primary register" href="https://bit.ly/2Mx5OBb" target="_blank" style="text-decoration: none;"> <strong>Purchase a ticket</strong></a>
