@@ -4,7 +4,7 @@
 <div id="hide" class="event">
     <h1 style="text-align: center; padding-bottom: 3%; padding-top: 10%;">Previous Courses</h1>
     <hr>
-    {{ range (where .Pages ".Params.type" "course").Reverse }}
+    {{ range (where .Pages ".Params.type" "course") }}
     <!--Checks params to see if the expiry date is less(before) than the current date -->
     {{ if lt .Params.expiry_date $d }}
     <ul>
