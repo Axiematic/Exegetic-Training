@@ -7,7 +7,7 @@ expiry_date: 2019-10-09 #need to set date in this formate year-month-day
 province: "Johannesburg"
 venue: "The Wanderers Club, Illovo"
 full_venue: "The Wanderers Club, Illovo"
-description:  "Deep Learning is a vast and convoluted topic. It’s hard to know where to start. This workshop will help you take your first steps with Deep Learning."
+description:  "Deep Learning is a vast and convoluted topic. It’s hard to know where to start. This workshop will help you take your first steps."
 type: "course"
 ---
 
