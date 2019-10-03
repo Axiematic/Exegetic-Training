@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning with R"
-date: 2019-08-29T00:14:43+02:00
+date: 2019-09-17T00:14:43+02:00
 draft: false
 course_date: "16 - 17 September 2019"
 expiry_date: 2019-09-17  #need to set date in this format year-month-day
