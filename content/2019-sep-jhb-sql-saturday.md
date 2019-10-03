@@ -1,6 +1,6 @@
 ---
 title: "SQL Server 2019 Big Data Cluster"
-date: 2019-09-12T00:14:43+02:00
+date: 2019-09-06T00:14:43+02:00
 draft: false
 course_date: "6 September 2019"
 expiry_date: 2019-09-06 #need to set date in this formate year-month-day
