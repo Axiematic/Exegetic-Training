@@ -7,7 +7,7 @@ expiry_date: 2019-11-15 #need to set date in this formate year-month-day
 province: "Durban"
 venue: "Lumec office"
 full_venue: "255 Problem Mkhize Rd, Essenwood, Durban"
-description:
+description: R is a phenomenal tool for working with data. Being able to lay out the steps in an analysis as a script means that the analysis is repeatable and can also be version controlled. If you'd like to get your foot in the Data Science door this is the course for you.
 type: "course"
 ---
 
